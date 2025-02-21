@@ -14,7 +14,7 @@ public class Livro {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   @NotBlank
-  private String nome;
+  private String titulo;
 
   public Long getId() {
     return id;
@@ -24,12 +24,11 @@ public class Livro {
     this.id = id;
   }
 
-  public String getNome() {
-    return nome;
+  public String getTitulo() {
+    return titulo;
   }
 
-  public void setNome(String nome) {
-    this.nome = nome;
+  public void setTitulo(String titulo) {
+    this.titulo = titulo;
   }
-
 }
